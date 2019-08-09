@@ -1,0 +1,33 @@
+{
+    "resourceType": "MeasureReport",
+    "measure": "http://ohie.org/Measure/hiv-indicators",
+    "id" : "12345-example"
+    "period": {
+	"start": "2018-01-01",
+	"end": "2018-01-31"
+    },
+    "group": [
+        {
+	    "code": { "coding": [{"code": "QRPH_ADX_ART1_N" } ]}
+	    "stratifier": [
+		"stratum": [
+		    {
+			"measureScore": {"value": 5 },
+			"component": [
+			    {
+				"code": {"coding": [{"code": "AGE_GROUP"}]},
+				"value": {"coding": [{"code": "P0Y--P1Y"}]}
+			    },
+			    {
+				"code": {"coding": [{"code": "SEX"}]},
+				"value": {"coding": [{"code": "F"}]}
+			    }
+			]
+		    }
+		]
+	    ]
+	}
+    ]
+}
+
+

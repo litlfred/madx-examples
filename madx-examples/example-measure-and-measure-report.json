@@ -1,0 +1,117 @@
+
+/******************************
+ *         Measure            *
+******************************/
+
+{    
+    "resourceType": "Measure",
+    "id": "madx-hiv-indicators-example",
+    "title": "HIV",
+    "version": "0.0.0",
+    "publisher" : "ohie.org",
+    "description" : "EXAMPLE indicators supporting OpenHIE 
+implementations of the IHE ADX-HIV content profile"
+    "subject" : {
+	"coding" : [ 
+	    {
+		"system" : "http://hl7.org/fhir/ValueSet/subject-type",
+		"code" : "Patient"
+	    }
+	]
+    },
+    "group" : [
+	{
+	    "code" : "QRPH_ADX_ART1_N",
+	    "description" : "Number of adults and children newly 
+enrolled on antiretroviral therapy (ART) ",
+	    "stratifier" : [
+		{
+		    "component" : [
+			{
+			    "code" : {
+				"coding" : [
+				    {
+					"system" : "http://ihe.net/qrph/madx-example-components",
+					"code" "AGE_GROUP",
+				    }
+				]
+			    }
+			},
+			{
+			    "code" : {
+				"coding" : [
+				    {
+					"system" : "http://ihe.net/qrph/adx-example-components",
+					"code" "SEX",
+				    }
+				]
+			    }
+			}
+		    ]
+		}
+	    ]	    
+	}
+    ],
+    "relatedArtifact" : [
+	{
+	    "label" : "AGE_GROUP",
+	    "url" : "http://ihe.net/qrph/adx-hiv-example-age-groups", 
+	    "type" : "depends-on"
+
+	},
+	{
+	    "label" : "SEX",
+	    "url" : "http://ihe.net/qrph/adx-hiv-example-sex", 
+	    "type" : "depends-on"
+
+	},
+    ],
+    "url": "http://ohie.org/Measure/madx-hiv-indicators-example",
+    "identifier": [
+	{
+	    "system": "http://ohie.org/Measure/",
+	    "value": "madx-hiv-indicators-example"
+	}
+    ],
+    "status": "draft",
+    "experimental": true,
+    "date": "2019-08-02",
+}
+
+/******************************
+ *      Measure Report        *
+******************************/
+
+{ 
+    "resourceType": "MeasureReport",
+    "measure": "http://ohie.org/Measure/madx-hiv-indicators-example",
+    "id" : "12345-example"
+    "period": {
+	"start": "2018-01-01",
+	"end": "2018-01-31"
+    },
+    "group": [
+        {
+	    "code": { "coding": [{"code": "QRPH_ADX_ART1_N" } ]}
+	    "stratifier": [
+		"stratum": [
+		    {
+			"measureScore": {"value": 5 },
+			"component": [
+			    {
+				"code": {"coding": [{"code": "AGE_GROUP"}]},
+				"value": {"coding": [{"code": "P0Y--P1Y"}]}
+			    },
+			    {
+				"code": {"coding": [{"code": "SEX"}]},
+				"value": {"coding": [{"code": "F"}]}
+			    }
+			]
+		    }
+		]
+	    ]
+	}
+    ]
+}
+
+
