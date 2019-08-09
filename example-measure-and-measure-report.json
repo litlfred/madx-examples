@@ -92,19 +92,53 @@ enrolled on antiretroviral therapy (ART) ",
     },
     "group": [
         {
-	    "code": { "coding": [{"code": "QRPH_ADX_ART1_N" } ]}
+	    "code": {
+		"coding": [
+		    {
+			"code": "QRPH_ADX_ART1_N"
+		    }
+		]
+	    }.
 	    "stratifier": [
 		"stratum": [
 		    {
-			"measureScore": {"value": 5 },
+			"measureScore": {
+			    "value": 5
+			},
 			"component": [
 			    {
-				"code": {"coding": [{"code": "AGE_GROUP"}]},
-				"value": {"coding": [{"code": "P0Y--P1Y"}]}
+				"code": {
+				    "coding": [
+					{
+					    "code": "AGE_GROUP"
+					}
+				    ]
+				},
+				"value": {
+				    "coding": [
+					{
+					    "system" : "http://ihe.net/qrph/adx-hiv-example-age-group", 
+					    "code": "P0Y--P1Y"
+					}
+				    ]
+				}
 			    },
 			    {
-				"code": {"coding": [{"code": "SEX"}]},
-				"value": {"coding": [{"code": "F"}]}
+				"code": {
+				    "coding": [
+					{
+					    "code": "SEX"
+					}
+				    ]
+				},
+				"value": {
+				    "coding": [
+					{
+					    "system" : "http://ihe.net/qrph/adx-hiv-example-sex", 
+					    "code": "F"
+					}
+				    ]
+				}
 			    }
 			]
 		    }
