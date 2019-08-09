@@ -10,7 +10,7 @@
     "version": "0.0.0",
     "publisher" : "ohie.org",
     "description" : "EXAMPLE indicators supporting OpenHIE 
-implementations of the IHE ADX-HIV content profile"
+implementations of the IHE ADX-HIV content profile",
     "subject" : {
 	"coding" : [ 
 	    {
@@ -32,7 +32,7 @@ enrolled on antiretroviral therapy (ART) ",
 				"coding" : [
 				    {
 					"system" : "http://ihe.net/qrph/madx-example-components",
-					"code" "AGE_GROUP",
+					"code" "AGE_GROUP"
 				    }
 				]
 			    }
@@ -42,7 +42,7 @@ enrolled on antiretroviral therapy (ART) ",
 				"coding" : [
 				    {
 					"system" : "http://ihe.net/qrph/adx-example-components",
-					"code" "SEX",
+					"code" "SEX"
 				    }
 				]
 			    }
@@ -85,7 +85,7 @@ enrolled on antiretroviral therapy (ART) ",
 { 
     "resourceType": "MeasureReport",
     "measure": "http://ohie.org/Measure/madx-hiv-indicators-example",
-    "id" : "12345-example"
+    "id" : "12345-example", 
     "period": {
 	"start": "2018-01-01",
 	"end": "2018-01-31"
@@ -98,7 +98,7 @@ enrolled on antiretroviral therapy (ART) ",
 			"code": "QRPH_ADX_ART1_N"
 		    }
 		]
-	    }.
+	    },
 	    "stratifier": [
 		"stratum": [
 		    {
