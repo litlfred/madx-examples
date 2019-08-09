@@ -9,8 +9,7 @@
     "title": "HIV",
     "version": "0.0.0",
     "publisher" : "ohie.org",
-    "description" : "EXAMPLE indicators supporting OpenHIE 
-implementations of the IHE ADX-HIV content profile",
+    "description" : "EXAMPLE indicators supporting OpenHIE implementations of the IHE ADX-HIV content profile",
     "subject" : {
 	"coding" : [ 
 	    {
@@ -22,8 +21,7 @@ implementations of the IHE ADX-HIV content profile",
     "group" : [
 	{
 	    "code" : "QRPH_ADX_ART1_N",
-	    "description" : "Number of adults and children newly 
-enrolled on antiretroviral therapy (ART) ",
+	    "description" : "Number of adults and children newly enrolled on antiretroviral therapy (ART)",
 	    "stratifier" : [
 		{
 		    "component" : [
@@ -151,3 +149,4 @@ enrolled on antiretroviral therapy (ART) ",
 }
 
 
+OB
